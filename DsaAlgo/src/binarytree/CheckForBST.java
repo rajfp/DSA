@@ -1,4 +1,5 @@
 package binarytree;
+
 /*
 Given the root of a binary tree. Check whether it is a BST or not.
 Note: We are considering that BSTs can not contain duplicate Nodes.
@@ -49,5 +50,16 @@ Expected Time Complexity: O(N).
 Expected Auxiliary Space: O(Height of the BST).
  */
 public record CheckForBST() {
+    static int val = Integer.MIN_VALUE;
 
+    boolean isBST(Node root) {
+        if (root == null)
+            return true;
+        if (!isBST(root.left))
+            return false;
+        if (root.data <= val)
+            return false;
+        val = root.data;
+        return isBST(root.right);
+    }
 }
