@@ -35,7 +35,6 @@ public class FirstNodeOfLoopLinkedList {
         Node p,q;
         p = head;
         q = head;
-        int count = 0;
         while(p != null && p.next != null){
             q = q.next;
             p = p.next.next;

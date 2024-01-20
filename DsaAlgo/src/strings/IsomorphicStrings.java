@@ -45,9 +45,8 @@ public class IsomorphicStrings {
                 a[str1.charAt(i)] = str2.charAt(i);
                 b[str2.charAt(i)] = str1.charAt(i);
             } else {
-                boolean b1 = a[str1.charAt(i)] != str2.charAt(i);
-                if ((a[str1.charAt(i)] != 0 && b1)
-                ||(a[str2.charAt(i)] != 0 && b1))
+                if ((a[str1.charAt(i)] != 0 && a[str1.charAt(i)] != str2.charAt(i))
+                        ||(b[str2.charAt(i)] != 0 && b[str2.charAt(i)] != str1.charAt(i)))
                     return false;
             }
         }
