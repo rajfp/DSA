@@ -40,7 +40,7 @@ public class CountAllPossiblePathsFromTopLeftToBottomRight {
     }
 
     static long numberOfPaths(long[][] a, int m, int n) {
-        if (m == 0 && n == 0)
+        if (m == 0 || n == 0)
             return 1;
         if (m < 0 || n < 0)
             return 0;
