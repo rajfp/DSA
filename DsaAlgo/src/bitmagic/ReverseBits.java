@@ -33,6 +33,16 @@ Expected Time Complexity: O(log(X))
 Expected Auxiliary Space: O(1)
  */
 public class ReverseBits {
+    /*
+    public int reverseBits(int n) {
+        int rev = 0;
+        for(int i = 0;i < 32 && n != 0;i++){
+            rev = rev | ((1 & n) << (31 - i));
+            n = n >> 1;
+        }
+        return rev;
+    }
+     */
     public static void main(String[] args) {
         System.out.println(reversedBits(7L));
     }

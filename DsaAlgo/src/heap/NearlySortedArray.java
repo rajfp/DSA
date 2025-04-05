@@ -32,10 +32,10 @@ public class NearlySortedArray {
     public static void main(String[] args) {
         int[] a = new int[]{3,1,4,2,5};
 
-        System.out.println(nearlySorted(a, a.length, 2));
+        System.out.println(nearlySorted(a, 2));
     }
 
-    static ArrayList<Integer> nearlySorted(int a[], int num, int k) {
+    static ArrayList<Integer> nearlySorted(int[] a, int k) {
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 0; i <= k; i++)

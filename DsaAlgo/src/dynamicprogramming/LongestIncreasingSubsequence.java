@@ -22,7 +22,8 @@ Output:
 Explanation:
 There are more than one LIS in this array.  One such Longest increasing subsequence is {5,7,9}.
 Your Task:
-Complete the function longestSubsequence() which takes the input array and its size as input parameters and returns the length of the longest increasing subsequence.
+Complete the function longestSubsequence() which takes the input array and its size as input parameters and returns the
+length of the longest increasing subsequence.
 
 Expected Time Complexity : O( NlogN )
 Expected Auxiliary Space: O(N)

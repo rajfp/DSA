@@ -53,3 +53,33 @@ public class PascalTriangle {
         return res;
     }
 }
+/*
+public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> list = new ArrayList<>();
+        List<Integer> numList = new ArrayList<>();
+        numList.add(1);
+        list.add(numList);
+        for(int i=1;i<numRows;i++){
+          getPascalList(list,i);
+        }
+        return list;
+    }
+
+    void getPascalList(List<List<Integer>> list,int idx){
+        List<Integer> l = list.get(idx-1);
+        List<Integer> newList = new ArrayList<Integer>();
+        for(int i = 0;i < l.size();i++){
+            if(i==0){
+                newList.add(l.get(i));
+                if(i+1 == l.size())
+                    newList.add(l.get(i));
+                continue;
+            }
+           newList.add(l.get(i)+l.get(i-1));
+            if(i == l.size()-1){
+                newList.add(l.get(l.size()-1));
+        }
+}
+        list.add(newList);
+}
+ */

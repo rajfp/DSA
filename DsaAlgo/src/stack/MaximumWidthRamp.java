@@ -55,4 +55,5 @@ public class MaximumWidthRamp {
         System.out.println(maxWidthRamp(new int[]{6,0,8,2,1,5}));
     }
 }
+//sol https://medium.com/@yashgirdhar/maximum-width-ramp-problem-b1687a40d0bf
 //Time complexity : O(n)

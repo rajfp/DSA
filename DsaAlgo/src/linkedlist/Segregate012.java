@@ -13,7 +13,7 @@ Explanation: All the 0s are segregated
 to the left end of the linked list,
 2s to the right end of the list, and
 1s in between.
-Example 2:
+Example 2
 
 Input:
 N = 4

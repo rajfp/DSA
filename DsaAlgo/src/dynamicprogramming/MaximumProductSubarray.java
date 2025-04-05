@@ -50,3 +50,7 @@ public class MaximumProductSubarray {
         return maxProd;
     }
 }
+/*
+Other approach run one loop from left side keep multiplying and store max wherever find 0 reset to 1,
+run one loop from right side do same and now max from both loop.
+ */
